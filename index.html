@@ -32,7 +32,6 @@
 		<ul class="nav">
 			<li><a class="home" href="./">首页</a></li>
 			<li><a class="home" href="./cn">中文博客</a></li>
-			<li><a class="home" href="./en">English Blog</a></li>
 			<li><a class="home" href="./cv">简历</a></li>
 			<li><a class="home" href="./info" target="_blank" >留言</a></li>
 		</ul>
@@ -53,10 +52,12 @@
 		<div class="loading"><img src="./images/loading.gif">正在加载...</div>
 	</div>	
 	
+	<!--
 	<div class="section" id="blog2-posts-list">
 	<p>我还有个文艺点儿的<a href="http://art.yanping.me" target="_blank">博客</a>，写写跟技术无关的东西。近期内容：</p>
 	<div class="loading"><img src="./images/loading.gif">正在加载...</div>
 	</div>
+	-->
 		
 
 
@@ -105,7 +106,8 @@
 				$("#blog1-posts-list").append(content);
 			});
 
-			$.getJSON("/art/recent.json",function(data){
+	         	/*
+		       $.getJSON("/art/recent.json",function(data){
 				var content ="<ul class=\"compact recent\">";
 				$.each(data,function(i,item){
 				
@@ -117,6 +119,7 @@
 				$("#blog2-posts-list .loading").remove();
 				$("#blog2-posts-list").append(content);
 			});
+			*/
 		});	
 	</script>
 
